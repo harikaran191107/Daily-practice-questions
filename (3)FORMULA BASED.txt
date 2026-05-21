@@ -1,0 +1,209 @@
+FORMULA BASED
+
+1)To print the area of rectangle:
+
+#include<stdio.h>
+int main(){
+    int length,breadth,area;
+    printf("enter the length:");
+    scanf("%d",&length);
+    printf("enter the breadth:");
+    scanf("%d",&breadth);
+    area=length*breadth;
+    printf("area of the rectangle=%d units",area);
+    return 0;
+}
+
+2)To print the area of the square:
+
+#include<stdio.h>
+int main(){
+    int side,area;
+    printf("enter the side:");
+    scanf("%d",&side);
+    area=side*side;
+    printf("area of the square=%d units",area);
+    return 0;
+}
+
+3)To print the area of the triangle:
+
+#include<stdio.h>
+int main(){
+    int height,breadth,area;
+    printf("enter the height:");
+    scanf("%d",&height);
+    printf("enter the breadth:");
+    scanf("%d",&breadth);
+    area=0.5*breadth*height;
+    printf("area of the triangle=%d units",area);
+    return 0;
+}
+
+4)To print the area of a circle:
+
+#include<stdio.h>
+int main(){
+    int radius,area;
+    printf("enter the radius:");
+    scanf("%d",&radius);
+    area=3.14*radius*radius;
+    printf("area of the circle=%d units",area);
+    return 0;
+}
+5)To print the distance between the two points:
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int x1,x2,y1,y2,distance;
+    printf("enter the point1:");
+    scanf("%d%d",&x1,&y1);
+    printf("enter the point2:");
+    scanf("%d%d",&x2,&y2);
+    distance=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+    printf("distance between the two points=%f",distance);
+    return 0;
+}
+
+6)To print the farenheit to Celsius:
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float farenheit,celsius;
+    printf("enter the value of farenheit:");
+    scanf("%f",&farenheit);
+    celsius=(farenheit-32)*(5.0/9.0);
+    printf("celsius =%.2f",celsius);
+    return 0;
+}
+
+7)To print the Celsius to farenheit:
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float farenheit,celsius;
+    printf("enter the value of celsius:");
+    scanf("%f",&celsius);
+    farenheit=(celsius*(9.0/5.0))+32;
+    printf("farenheit =%.2f",farenheit);
+    return 0;
+}
+
+8)To print the perimeter of the square:
+
+#include<stdio.h>
+int main(){
+    int side,perimeter;
+    printf("enter a side:");
+    scanf("%d",&side);
+    perimeter=4*side;
+    printf("perimeter of a square=%d units",perimeter);
+    return 0;
+}
+
+9)To print the perimeter of the rectangle:
+
+#include<stdio.h>
+int main(){
+    int length,breadth,perimeter;
+    printf("enter a length:");
+    scanf("%d",&length);
+    printf("enter a breadth:");
+    scanf("%d",&breadth);
+    perimeter=2*(length+breadth);
+    printf("perimeter of a rectangle=%d units",perimeter);
+    return 0;
+}
+
+10)To print the perimeter of the triangle:
+
+#include<stdio.h>
+int main(){
+    int side1,side2,side3,perimeter;
+    printf("enter a side1:");
+    scanf("%d",&side1);
+    printf("enter a side2:");
+    scanf("%d",&side2);
+    printf("enter a side3:");
+    scanf("%d",&side3);
+    perimeter=side1+side2+side3;
+    printf("perimeter of a triangle=%d units",perimeter);
+    return 0;
+}
+
+11)To print the circumference of a circle:
+
+#include<stdio.h>
+int main(){
+    int radius,circumference;
+    printf("enter a radius:");
+    scanf("%d",&radius);
+    circumference=2*3.14*radius;
+    printf("circumference of a circle=%d units",circumference);
+    return 0;
+}
+
+12)To print the surface area and volume of a cube:
+
+#include<stdio.h>
+int main(){
+    int side,surfacearea,volume;
+    printf("enter a side:");
+    scanf("%d",&side);
+    surfacearea=6*side*side;
+    volume=side*side*side;
+    printf("surface area of the cube=%d\n units",surfacearea);
+    printf("volume of a cube=%d units",volume);
+    return 0;
+}
+
+13)To print the surface area and volume of a cuboid:
+
+#include<stdio.h>
+int main(){
+    int length,breadth,height,surfacearea,volume;
+    printf("enter a length:");
+    scanf("%d",&length);
+    printf("enter a breadth:");
+    scanf("%d",&breadth);
+    printf("enter a height:");
+    scanf("%d",&height);
+    surfacearea=2*((length*breadth)+(breadth*height)+(height*length));
+    volume=length*breadth*height;
+    printf("surface area of the cuboid=%d\n units",surfacearea);
+    printf("volume of a cuboid=%d units",volume);
+    return 0;
+}
+
+14)To print the surface area and volume of a sphere:
+
+#include<stdio.h>
+int main(){
+    int radius,surfacearea,volume;
+    printf("enter a radius:");
+    scanf("%d",&radius);
+    surfacearea=4*3.14*radius*radius;
+    volume=(4.0/3.0)*3.14*radius*radius*radius;
+    printf("surface area of the sphere=%d\n units",surfacearea);
+    printf("volume of a sphere=%d units",volume);
+    return 0;
+}
+
+15)To print the surface area and volume of a cyclinder:
+
+#include<stdio.h>
+int main(){
+    int radius,height,surfacearea,volume;
+    printf("enter a radius:");
+    scanf("%d",&radius);
+    printf("enter a height:");
+    scanf("%d",&height);
+    surfacearea=2*3.14*radius*(radius+height);
+    volume=3.14*radius*radius*height;
+    printf("surface area of the cylinder=%d\n units",surfacearea);
+    printf("volume of a cylinder=%d units",volume);
+    return 0;
+}
