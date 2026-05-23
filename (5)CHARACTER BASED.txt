@@ -1,0 +1,91 @@
+CHARACTER BASED
+
+1)To print the given character as a vowel or consonant:
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter a character:");
+    scanf("%c",&ch);
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+        printf("the given character is a vowel");
+    }
+    else if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+        printf("the given character is a vowel");
+    }
+    else{
+        printf("the given character is a consonant");
+    }
+    return 0;
+}
+
+2)To print the given character is an uppercase, lowercase or number:
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter a character:");
+    scanf("%c",&ch);
+    if(ch>='A' && ch<='Z'){
+        printf("the given character is in uppercase");
+    }
+    else if(ch>='a' && ch<='z'){
+        printf("the given character is in lowercase");
+    }
+    else{
+        printf("the given character is a number");
+    }
+    return 0;
+}
+
+3)To print whether the character is alphabet or not:
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter a character:");
+    scanf("%c",&ch);
+    if(ch>='A' && ch<='Z' || ch>='a' && ch<='z'){
+        printf("the given character is an alphabet");
+    }
+    else{
+        printf("the given character is not an alphabet");
+    }
+    return 0;
+}
+
+4)To print whether the character is number or not:
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter a character:");
+    scanf("%c",&ch);
+    if(ch>=0 && ch<=9999){
+        printf("the given character is an number");
+    }
+    else{
+        printf("the given character is not an number");
+    }
+    return 0;
+}
+
+5)To print the whether the two characters are equal:
+
+#include<stdio.h>
+int main(){
+    char ch1,ch2;
+    printf("enter a character1:");
+    scanf("%c",&ch1);
+    printf("enter a character2:");
+    scanf(" %c",&ch2);
+    printf("\n");
+    if(ch1==ch2){
+        printf("the given two characters are equal");
+    }
+    else{
+        printf("the given two characters are not equal");
+    }
+    return 0;
+}
+
