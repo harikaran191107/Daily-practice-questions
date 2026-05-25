@@ -1,0 +1,389 @@
+NUMBER BASED
+
+1)To find greatest among two numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2;
+    printf("enter the number 1:");
+    scanf("%d",&num1);
+    printf("enter the number 2:");
+    scanf("%d",&num2);
+    if(num1>num2){
+        printf("number 1 is greater than number 2");
+    }
+    else{
+        printf("number 2 is greater than number 1");
+    }
+    return 0;
+}
+
+2)To find smallest among two numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2;
+    printf("enter the number 1:");
+    scanf("%d",&num1);
+    printf("enter the number 2:");
+    scanf("%d",&num2);
+    if(num1<num2){
+        printf("number 1 is smaller than number 2");
+    }
+    else{
+        printf("number 2 is smaller than number 1");
+    }
+    return 0;
+}
+
+3)To find whether the given number is odd or even:
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    if(num%2==0){
+        printf("given number is even");
+    }
+    else{
+        printf("given number is odd");
+    }
+    return 0;
+}
+
+4)To find whether the difference between the two numbers is even or odd:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,diff;
+    printf("enter the number 1:");
+    scanf("%d",&num1);
+    printf("enter the number 2:");
+    scanf("%d",&num2);
+    diff=num1-num2;
+    printf("difference=%d",diff);
+    printf("\n");
+    if(diff%2==0){
+        printf("difference is even");
+    }
+    else{
+        printf("difference is odd");
+    }
+    return 0;
+}
+
+5)To find whether the given number is 3 digit number or not:
+
+#include<stdio.h>
+int main(){
+    int num,count=0;
+    printf("enter the number:");
+    scanf("%d",&num);
+    for(int i=0;i<num;i++){
+        num=num%10;
+        count++;
+    }
+    if(count==3){
+        printf("it is a three digit number");
+    }
+    else{
+        printf("it is not a three digit number");
+    }
+    return 0;
+}
+
+6)To find the greatest of three numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,num3;
+    printf("enter the number 1:");
+    scanf("%d",&num1);
+    printf("enter the number 2:");
+    scanf("%d",&num2);
+    printf("enter the number 3:");
+    scanf("%d",&num3);
+    if(num1>num2 && num1>num3){
+        printf("the number 1 is greater than number 2 and number 3");
+    }
+    else if(num2>num3){
+        printf("the number 2 is greater than number 1 and number 3");
+    }
+    else{
+        printf("the number 3 is greater than number 1 and number 2");
+    }
+    return 0;
+}
+
+7)To find the smallest of three numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,num3;
+    printf("enter the number 1:");
+    scanf("%d",&num1);
+    printf("enter the number 2:");
+    scanf("%d",&num2);
+    printf("enter the number 3:");
+    scanf("%d",&num3);
+    if(num1<num2 && num1<num3){
+        printf("the number 1 is smaller than number 2 and number 3");
+    }
+    else if(num2<num3){
+        printf("the number 2 is smaller than number 1 and number 3");
+    }
+    else{
+        printf("the number 3 is smaller than number 1 and number 2");
+    }
+    return 0;
+}
+
+8)To find whether the last digit of a given number divisible by 3:
+
+#include<stdio.h>
+int main(){
+    int num,lastdigit;
+    printf("enter the number:");
+    scanf("%d",&num);
+    lastdigit=num%10;
+    printf("last digit:%d",lastdigit);
+    printf("\n");
+    if(lastdigit%3==0){
+        printf("it is divisible by 3");
+    }
+    else{
+        printf("it is not divisible by 3");
+    }
+    return 0;
+}
+
+9)To find whether the number is even or odd using bitwise:
+
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    if (num & 1)
+        printf("The number is odd");
+    else
+        printf("The number is even");
+    return 0;
+}
+
+10)To find whether the sum of given number is even or odd:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,sum;
+    printf("enter the number 1:");
+    scanf("%d",&num1);
+    printf("enter the number 2:");
+    scanf("%d",&num2);
+    sum=num1+num2;
+    printf("sum:%d",sum);
+    printf("\n");
+    if(sum%2==0){
+        printf("sum is even");
+    }
+    else{
+        printf("sum is odd");
+    }
+    return 0;
+}
+
+11)To find whether the first digit of a given number is odd or even:
+
+#include<stdio.h>
+int main(){
+    int num,firstdigit;
+    printf("enter the number:");
+    scanf("%d",&num);
+    firstdigit=num/100;
+    printf("firstdigit:%d",firstdigit);
+    printf("\n");
+    if(firstdigit%2==0){
+        printf("first digit is even");
+    }
+    else{
+        printf("first digit is odd");
+    }
+    return 0;
+}
+
+12)To find whether the last digit of a number is even or odd:
+
+#include<stdio.h>
+int main(){
+    int num,lastdigit;
+    printf("enter the number:");
+    scanf("%d",&num);
+    lastdigit=num%10;
+    printf("lastdigit:%d",lastdigit);
+    printf("\n");
+    if(lastdigit%2==0){
+        printf("last digit is even");
+    }
+    else{
+        printf("last digit is odd");
+    }
+    return 0;
+}
+
+13)To find whether the given number is positive or negative or zero:
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    if(num>0){
+        printf("the given number is positive");
+    }
+    else if(num<0){
+        printf("the given number is negative");
+    }
+    else{
+        printf("the given number is zero");
+    }
+    return 0;
+}
+
+14)To find whether the given number is divisible by both 3 and 5:
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    if(num%3==0 && num%5==0){
+        printf("the given number is divisible by both 3 and 5");
+    }
+    else{
+        printf("the given number is not divisible by both 3 and 5");
+    }
+    return 0;
+}
+
+15)To check whether the given number is divisible either by 3 or 7:
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    if(num%3==0 || num%7==0){
+        printf("the given number is divisible either by 3 and 7");
+    }
+    else{
+        printf("the given number is not divisible either by 3 and 7");
+    }
+    return 0;
+}
+
+16)To find whether the given number is divisible by 2 and 5 but not 8:
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    if((num%2==0 && num%5==0) || (num%8!=0)){
+        printf("the given number is divisible by 2 and 5 but not 8");
+    }
+    else{
+        printf("the given number is not divisible by 2 and 5 but not 8");
+    }
+}
+
+17)To find whether the last digit of the two numbers are same:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,lastdigit1,lastdigit2;
+    printf("enter the number 1:");
+    scanf("%d",&num1);
+    printf("enter the number 2:");
+    scanf("%d",&num2);
+    lastdigit1=num1%10;
+    printf("lastdigit 1=%d",lastdigit1);
+    printf("\n");
+    lastdigit2=num2%10;
+    printf("lastdigit 2=%d",lastdigit2);
+    printf("\n");
+    if(lastdigit1==lastdigit2){
+        printf("the last digits of the two numbers are same");
+    }
+    else{
+        printf("the last digits of the two numbers are not same");
+    }
+    return 0;
+}
+
+18)To find whether the given number is single,two or three digit number:
+
+#include<stdio.h>
+int main(){
+    int num,count=0;
+    printf("enter the number:");
+    scanf("%d",&num);
+    for(int i=0;i<num;i++){
+        num=num%10;
+        count++;
+    }
+    printf("number of digits=%d",count);
+    printf("\n");
+    if(count==1){
+        printf("it is a single digit number");
+    }
+    else if(count==2){
+        printf("it is a double digit number");
+    }
+    else if(count==3){
+        printf("it is a three digit number");
+    }
+    else{
+        printf("it has more than 3 digits");
+    }
+    return 0;
+}
+
+19)To check whether the product of given two numbers is positive or negative:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,product;
+    printf("enter the number 1:");
+    scanf("%d",&num1);
+    printf("enter the number 2:");
+    scanf("%d",&num2);
+    product=num1*num2;
+    printf("the product of the two numbers is %d",product);
+    printf("\n");
+    if(product>0){
+        printf("the product is positive");
+    }
+    else{
+        printf("the product is negative");
+    }
+    return 0;
+}
+
+20)To check the given ascii value is odd or even:
+
+#include<stdio.h>
+int main(){
+    char num;
+    printf("enter the value:");
+    scanf("%c",&num);
+    printf("the ascii value of a given number is %d",num);
+    printf("\n");
+    if(num%2==0){
+        printf("the given value is even");
+    }
+    else{
+        printf("the given value is odd");
+    }
+    return 0;
+}
